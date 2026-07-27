@@ -1,0 +1,9 @@
+services:
+  client:
+    build: .
+    env_file: ".env"
+    volumes:
+      - openbench_data:/app
+
+volumes:
+  openbench_data:
